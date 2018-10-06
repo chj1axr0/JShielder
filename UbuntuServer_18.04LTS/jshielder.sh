@@ -370,7 +370,7 @@ install_nginx_modsecurity(){
   tar xzvf nginx-1.9.7.tar.gz
   cp ../templates/ngx_http_header_filter_module.c nginx-1.9.7/src/http/ngx_http_header_filter_module.c
   cd nginx-1.9.7/
-  ./configure --user=www-data --group=www-data --with-pcre-jit --with-debug --with-http_ssl_module --add-module=/root/JShielder/UbuntuServer_14.04LTS/src/ModSecurity/nginx/modsecurity
+  ./configure --user=www-data --group=www-data --with-pcre-jit --with-debug --with-http_ssl_module --add-module=/root/JShielder/UbuntuServer_18.04LTS/src/ModSecurity/nginx/modsecurity
   make
   make install
   #Replacing Nginx conf with secure Configurations
