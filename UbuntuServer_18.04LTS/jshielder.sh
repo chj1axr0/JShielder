@@ -366,10 +366,10 @@ install_nginx_modsecurity(){
   ./configure --enable-standalone-module
   make
   cd ..
-  wget http://nginx.org/download/nginx-1.9.7.tar.gz
-  tar xzvf nginx-1.9.7.tar.gz
+  wget http://nginx.org/download/nginx-1.15.0.tar.gz
+  tar xzvf nginx-1.15.0.tar.gz
   cp ../templates/ngx_http_header_filter_module.c nginx-1.9.7/src/http/ngx_http_header_filter_module.c
-  cd nginx-1.9.7/
+  cd nginx-1.15.0/
   ./configure --user=www-data --group=www-data --with-pcre-jit --with-debug --with-http_ssl_module --add-module=/root/JShielder/UbuntuServer_18.04LTS/src/ModSecurity/nginx/modsecurity
   make
   make install
