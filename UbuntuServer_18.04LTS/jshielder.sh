@@ -357,7 +357,7 @@ install_nginx_modsecurity(){
   echo -e "\e[93m[+]\e[00m Downloading and Compiling Nginx with ModSecurity"
   echo -e "\e[34m---------------------------------------------------------------------------------------------------------\e[00m"
   echo ""
-  apt -y install git build-essential libpcre3 libpcre3-dev libssl-dev libtool autoconf apache2-prefork-dev libxml2-dev libcurl4-openssl-dev
+  apt -y install git build-essential libpcre3 libpcre3-dev libssl-dev libtool autoconf apache2-dev libxml2-dev libcurl4-openssl-dev
   mkdir src
   cd src/
   git clone https://github.com/SpiderLabs/ModSecurity
